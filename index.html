@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge-Desafio 1</title>
+    <link rel="stylesheet" href="./style/estilos.css">
+</head>
+    <main class="presentacion">
+        <section>
+            <div class="contenedor">
+                <!--<label for="caTexto">Ingrese texto aqui</label>-->
+                <input type="text" id="caTexto"  placeholder="Ingrese texto aqui"
+                >
+    
+                <div class="contenedor__event">
+                    <p class="texto__letrasMyS">Solo letras minúsculas y sin acentos</p>
+                    <div class="contenedor__boton">
+                        <button class="boton_encriptar" type="button" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="boton_desencriptar" type="button" onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <div class="contenedor__img">
+            <div id="conteImg" class="contenedor__imgh2p">
+                <img src="./img/Muñeco.png" alt="">
+                <h2  class="miTexto">Ningún mensaje fue <br>encontrado</h2>
+                <p class="texto__img miTexto"   >Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+            </div>
+            
+            <div id="conteTyb" class="contenedor__tyb">
+                <p id="texto_incrip" class="texto__incriptado" readonly>
+                    
+                </p>
+
+                <button id="buton_copiar"class="boton__copiar" type="button" onclick="copiarTexto()">Copiar</button>
+            </div>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
